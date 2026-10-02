@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BURNICE ARCHIVE // VISUAL ARCHITECT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Overlays -->
+<div class="noise-overlay"></div>
+<div class="scanlines"></div>
+<div class="bg-grid"></div>
+<canvas id="digitalRain"></canvas>
+
+<!-- Loading Screen -->
+<div id="loading-screen">
+  <div class="load-frame">
+    <h2 class="load-title glitch-text" data-text="BURNICE ARCHIVE">BURNICE ARCHIVE</h2>
+    <div class="load-subtitle">ESTABLISHING SECURE PROXY LINK...</div>
+    <div class="load-bar-track"><div class="load-bar-fill"></div></div>
+    <div class="load-percent" id="loadPercent">0%</div>
+    <div class="load-status" id="loadStatus">INITIALIZING...</div>
+  </div>
+</div>
+
+<!-- Page Transition Overlay -->
+<div class="page-transition" id="pageTransition">
+  <div class="trans-slice"></div>
+  <div class="trans-slice"></div>
+  <div class="trans-slice"></div>
+  <div class="trans-slice"></div>
+  <div class="trans-slice"></div>
+  <div class="trans-slice"></div>
+  <div class="trans-slice"></div>
+  <div class="trans-slice"></div>
+  <div class="trans-slice"></div>
+  <div class="trans-slice"></div>
+  <div class="trans-logo">BURNICE // ARCHIVE</div>
+</div>
+
+<!-- Top Taskbar -->
+<header class="top-taskbar" id="topTaskbar">
+  <div class="taskbar-brand" onclick="goHome()">
+    <span class="brand-sys">BURNICE ARCHIVE //</span>
+    <span class="brand-title">VISUAL ARCHITECT</span>
+  </div>
+  <div style="display: flex; align-items: center;">
+    <div class="viz-bars">
+      <div class="viz-bar"></div><div class="viz-bar"></div><div class="viz-bar"></div>
+      <div class="viz-bar"></div><div class="viz-bar"></div>
+    </div>
+    <div class="taskbar-actions">
+      <button class="btn-ghost accent" onclick="openDrawer('profile')">Meet Author</button>
+      <button class="btn-ghost" onclick="openDrawer('blog')">Journey</button>
+    </div>
+  </div>
+  <button class="mobile-toggle" onclick="toggleMobileMenu()">☰</button>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-menu" onclick="toggleMobileMenu()">✕</button>
+  <a href="#" onclick="goHome(); toggleMobileMenu();">Lobby</a>
+  <a href="#" onclick="openCategory('design'); toggleMobileMenu();">Desain Grafis</a>
+  <a href="#" onclick="openCategory('photo'); toggleMobileMenu();">Fotografi</a>
+  <a href="#" onclick="openCategory('iot'); toggleMobileMenu();">IoT Projects</a>
+  <a href="#" onclick="openDrawer('profile'); toggleMobileMenu();">Profile</a>
+  <a href="#" onclick="openDrawer('blog'); toggleMobileMenu();">Journey</a>
+</div>
+
+<!-- Category Sidebar -->
+<nav class="cat-sidebar" id="catSidebar">
+  <div class="cat-item" data-cat="design" onclick="openCategory('design')"><span class="cat-num">01</span><span class="cat-name">Desain Grafis</span></div>
+  <div class="cat-item" data-cat="photo" onclick="openCategory('photo')"><span class="cat-num">02</span><span class="cat-name">Fotografi</span></div>
+  <div class="cat-item" data-cat="iot" onclick="openCategory('iot')"><span class="cat-num">03</span><span class="cat-name">IoT Projects</span></div>
+  <div class="cat-item" onclick="goHome()"><span class="cat-num">⌂</span><span class="cat-name">Lobby Utama</span></div>
+</nav>
+
+<!-- Social Dock -->
+<div class="social-dock" id="socialDock">
+  <a href="#" class="social-item" title="Facebook">
+    <span class="social-icon-wrap"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h7v-7h-2v-3h2V8.5c0-2.2 1.3-3.5 3.4-3.5.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.5-1.3 1.2V11h2.5l-.4 3h-2.1v7h3.8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/></svg></span>
+    <span class="social-label">Facebook</span>
+  </a>
+  <a href="#" class="social-item" title="Instagram">
+    <span class="social-icon-wrap"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.4 5.6 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.6 18.4 4 16.4 4H7.6zm9.6 1.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg></span>
+    <span class="social-label">Instagram</span>
+  </a>
+  <a href="#" class="social-item" title="Twitter / X">
+    <span class="social-icon-wrap"><svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.05c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.52 8.52 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/></svg></span>
+    <span class="social-label">Twitter / X</span>
+  </a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero" id="heroSection">
+  <div class="hero-slideshow" id="heroSlideshow">
+    <div class="hero-bg active" style="background-image: url('https://kimi-web-img.kimi.ai/img/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/0869b9ca0a0445b22d1899988b6609c1f0eef50f.png');"></div>
+    <div class="hero-bg" style="background-image: url('https://kimi-web-img.kimi.ai/img/s1.zerochan.net/537aee25c6020e6bfaa29d0031dc1c1f95e875e1.jpg');"></div>
+    <div class="hero-bg" style="background-image: url('https://kimi-web-img.kimi.ai/img/upload-os-bbs.hoyolab.com/1b343c56c50e8775e2c103dba3502cb5b9e362cd.png');"></div>
+  </div>
+  <div class="hero-vignette"></div>
+  <div class="hero-bracket tl"></div>
+  <div class="hero-bracket tr"></div>
+  <div class="hero-bracket bl"></div>
+  <div class="hero-bracket br"></div>
+  <div class="hero-content" id="heroContent">
+    <span class="hero-badge glitch-text" data-text="Burnice White Terminal //">Burnice White Terminal //</span>
+    <h1 class="glitch-text" data-text="Visual Architect">Visual<br>Architect</h1>
+    <p class="hero-sub" id="typewriterText"></p>
+  </div>
+  <button class="hero-access-btn" id="heroAccessBtn" onclick="scrollToContent()">
+    <span>ACCESS DIRECTORY</span>
+    <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+  </button>
+</section>
+
+<div class="neon-divider"></div>
+
+<main class="main-container" id="mainContent">
+  <div id="view-lobby" class="view-section active">
+    <div class="briefing reveal">
+      <div class="briefing-tag">SYSTEM BRIEFING // STATUS: ONLINE</div>
+      <p class="briefing-desc">Selamat datang di terminal arsip pusat Burnice White. Akses direktori operasional di bawah untuk meninjau portofolio desain grafis, tangkapan fotografi, hingga modul perangkat keras IoT secara langsung. Semua node telah tersinkronisasi dengan proxy database utama.</p>
+    </div>
+    <h2 class="section-header reveal">Pilih Direktori ZZZ <span class="arrow-group">➔ ➔</span></h2>
+    <div class="card-grid menu-grid">
+      <div class="card-wrapper reveal" onclick="openCategory('design')" style="transition-delay: 0.1s">
+        <div class="card">
+          <img class="card-img" src="https://kimi-web-img.kimi.ai/img/cdn.displate.com/7b63361acf5fcfb9c8b9e9037f2f0fa5f99f66b3.jpg" alt="Desain Grafis">
+          <div class="card-info">
+            <div class="card-meta">[01] KATEGORI UTAMA</div>
+            <h3 class="card-title">Desain Grafis</h3>
+            <p class="card-desc">Eksplorasi identitas visual, UI/UX antarmuka faksi, vektor presisi tinggi, dan estetika distrik urban New Eridu.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper reveal" onclick="openCategory('photo')" style="transition-delay: 0.2s">
+        <div class="card">
+          <img class="card-img" src="https://kimi-web-img.kimi.ai/img/embed.pixiv.net/a7a4f38de627112d59e5660412010ff339cd5428.jpg" alt="Fotografi">
+          <div class="card-info">
+            <div class="card-meta">[02] KATEGORI UTAMA</div>
+            <h3 class="card-title">Fotografi</h3>
+            <p class="card-desc">Arsip tangkapan optik DSLR dan eksplorasi pencahayaan taktis di dalam area investigasi Hollow.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper reveal" onclick="openCategory('iot')" style="transition-delay: 0.3s">
+        <div class="card">
+          <img class="card-img" src="https://kimi-web-img.kimi.ai/img/storage.waifuwall.com/2d961c8cd91b231ed58ca793f736143b78207fa7.webp" alt="IoT Projects">
+          <div class="card-info">
+            <div class="card-meta">[03] KATEGORI UTAMA</div>
+            <h3 class="card-title" style="color: #ff6b9d;">IoT Projects</h3>
+            <p class="card-desc">Modul integrasi perangkat keras, otomatisasi mikrokontroler, dan perakitan sistem cerdas lapangan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="view-gallery" class="view-section">
+    <button class="btn-back reveal" onclick="goHome()"><span>◄</span> Akses Lobby Utama</button>
+    <h2 class="section-header reveal" id="galleryTitle">Arsip Direktori <span class="arrow-group">➔ ➔</span></h2>
+    <div class="card-grid" id="galleryGrid"></div>
+  </div>
+</main>
+
+
+
+
+<div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer(event)">
+  <div class="drawer-panel" onclick="event.stopPropagation()">
+    <button class="drawer-close" onclick="closeDrawerDirect()">✕</button>
+    <div class="drawer-section" id="drawer-profile">
+      <h2 class="section-header" style="margin-bottom: 2.5rem;">Intelijen Data // Profil <span class="arrow-group">➔ ➔</span></h2>
+      <div class="profile-box">
+        <div class="profile-img-wrap"><img src="https://kimi-web-img.kimi.ai/img/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/93497a7381b7b7bceef76cb1996840cb067825a9.png" alt="Foto Profil"></div>
+        <div class="profile-desc">
+          <h2 class="profile-name">Proxy / Visual Architect</h2>
+          <div class="profile-role">Operative Class // Hollow Investigator</div>
+          <p class="profile-bio">Beroperasi di dalam Hollows New Eridu. Menggabungkan estetika antarmuka game taktis, desain grafis bernuansa distrik urban, dan kalibrasi sistem optik untuk hasil visual beresolusi tinggi ala Zenless Zone Zero.</p>
+          <div class="profile-links">
+            <a href="#" class="profile-link"><span>◈</span> Hollow Net // Facebook</a>
+            <a href="#" class="profile-link"><span>◈</span> Hollow Net // Instagram</a>
+            <a href="#" class="profile-link"><span>◈</span> Hollow Net // Twitter/X</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-section" id="drawer-blog">
+      <h2 class="section-header" style="margin-bottom: 2.5rem;">Follow My Journey <span class="arrow-group">➔ ➔</span></h2>
+      <div style="background: linear-gradient(90deg, var(--primary) 0%, transparent 100%); padding: 2px; margin-bottom: 3rem; clip-path: polygon(0 0, 100% 0, 98% 100%, 0 100%);">
+        <div style="background: var(--bg-card); padding: 24px 32px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; clip-path: polygon(0 0, 100% 0, 98% 100%, 0 100%);">
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 2rem; color: #fff; margin-bottom: 6px; line-height: 1;">Live Network: Inter-Knot</h3>
+            <p style="color: var(--text-muted); margin: 0; font-size: 0.95rem;">Pantau transmisi harian misi Hollow dan aktivitas taktis.</p>
+          </div>
+          <a href="#" style="background: var(--primary); color: #000; padding: 12px 28px; text-decoration: none; font-weight: 700; font-family: var(--font-display); font-size: 1.1rem; letter-spacing: 2px; text-transform: uppercase; clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px); transition: all 0.3s; display: inline-block;">KONEKSIKAN UI ↗</a>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+        <div style="background: var(--bg-card); border: 1px solid var(--ui-line); padding: 24px; clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--secondary); margin-bottom: 8px; letter-spacing: 2px;">LOG #042 // 2026.08.30</div>
+          <h4 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 8px; color: #fff;">Investigasi Distrik 12</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Eksplorasi visual di distrik terdalam Hollow dengan setup kamera taktis modifikasi.</p>
+        </div>
+        <div style="background: var(--bg-card); border: 1px solid var(--ui-line); padding: 24px; clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--secondary); margin-bottom: 8px; letter-spacing: 2px;">LOG #041 // 2026.08.15</div>
+          <h4 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 8px; color: #fff;">UI Faksi Belobog</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Redesign antarmuka terminal dengan pendekatan brutalism cyberpunk.</p>
+        </div>
+        <div style="background: var(--bg-card); border: 1px solid var(--ui-line); padding: 24px; clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);">
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--secondary); margin-bottom: 8px; letter-spacing: 2px;">LOG #040 // 2026.07.28</div>
+          <h4 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 8px; color: #fff;">Modul Sensor Hollow</h4>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">Perakitan prototype sensor deteksi anomali berbasis Arduino dan ESP32.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="detailModal" onclick="closeDetail(event)">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeDetailDirect()">✕</button>
+    <div class="modal-img-wrap"><img id="detailImg" src="" alt="Detail Karya"></div>
+    <div class="modal-text">
+      <h2 class="modal-title" id="detailTitle">Judul</h2>
+      <div class="modal-meta" id="detailMeta">Kategori</div>
+      <p class="modal-desc" id="detailDesc">Deskripsi</p>
+    </div>
+  </div>
+</div>
+
+<script src="data/projects.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
