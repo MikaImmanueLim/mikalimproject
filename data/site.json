@@ -16,7 +16,8 @@
       "https://kimi-web-img.kimi.ai/img/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/0869b9ca0a0445b22d1899988b6609c1f0eef50f.png",
       "https://kimi-web-img.kimi.ai/img/s1.zerochan.net/537aee25c6020e6bfaa29d0031dc1c1f95e875e1.jpg",
       "https://kimi-web-img.kimi.ai/img/upload-os-bbs.hoyolab.com/1b343c56c50e8775e2c103dba3502cb5b9e362cd.png"
-    ]
+    ],
+    "typewriter": "SECURE PROXY DATABASE // ALL NODES SYNCHRONIZED"
   },
   "categories": [
     {
@@ -141,7 +142,8 @@
     "image": "https://kimi-web-img.kimi.ai/img/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/93497a7381b7b7bceef76cb1996840cb067825a9.png",
     "name": "Proxy / Visual Architect",
     "role": "Operative Class // Hollow Investigator",
-    "bio": "Beroperasi di dalam Hollows New Eridu. Menggabungkan estetika antarmuka game taktis, desain grafis bernuansa distrik urban, dan kalibrasi sistem optik untuk hasil visual beresolusi tinggi ala Zenless Zone Zero."
+    "bio": "Beroperasi di dalam Hollows New Eridu. Menggabungkan estetika antarmuka game taktis, desain grafis bernuansa distrik urban, dan kalibrasi sistem optik untuk hasil visual beresolusi tinggi ala Zenless Zone Zero.",
+    "heading": "Intelijen Data // Profil"
   },
   "journey": {
     "sectionTitle": "Follow My Journey",
@@ -172,6 +174,37 @@
         "date": "2026.07.28",
         "title": "Modul Sensor Hollow",
         "description": "Perakitan prototype sensor deteksi anomali berbasis Arduino dan ESP32."
+      }
+    ],
+    "heading": "Follow My Journey",
+    "networkTitle": "Live Network: Inter-Knot",
+    "networkButton": "KONEKSIKAN UI ↗",
+    "networkUrl": "#",
+    "networkDescription": "Pantau transmisi harian misi Hollow dan aktivitas taktis.",
+    "logs": [
+      {
+        "id": "log-042",
+        "label": "LOG #042 // 2026.08.30",
+        "date": "2026.08.30",
+        "title": "Investigasi Distrik 12",
+        "description": "Eksplorasi visual di distrik terdalam Hollow dengan setup kamera taktis modifikasi.",
+        "meta": "LOG #042 // 2026.08.30"
+      },
+      {
+        "id": "log-041",
+        "label": "LOG #041 // 2026.08.15",
+        "date": "2026.08.15",
+        "title": "UI Faksi Belobog",
+        "description": "Redesign antarmuka terminal dengan pendekatan brutalism cyberpunk.",
+        "meta": "LOG #041 // 2026.08.15"
+      },
+      {
+        "id": "log-040",
+        "label": "LOG #040 // 2026.07.28",
+        "date": "2026.07.28",
+        "title": "Modul Sensor Hollow",
+        "description": "Perakitan prototype sensor deteksi anomali berbasis Arduino dan ESP32.",
+        "meta": "LOG #040 // 2026.07.28"
       }
     ]
   },
@@ -225,6 +258,49 @@
       "ACCESS GRANTED"
     ],
     "pageTransitionLabel": "BURNICE // ARCHIVE",
-    "heroSlideIntervalMs": 6000
-  }
+    "heroSlideIntervalMs": 6000,
+    "publicUrl": "https://mikailmanuelim.github.io/mikalimproject/",
+    "imageMaxWidth": 2400,
+    "imageQuality": 0.88
+  },
+  "site": {
+    "documentTitle": "BURNICE ARCHIVE // VISUAL ARCHITECT",
+    "brandSystem": "BURNICE ARCHIVE //",
+    "brandTitle": "VISUAL ARCHITECT",
+    "loadingTitle": "BURNICE ARCHIVE",
+    "loadingSubtitle": "ESTABLISHING SECURE PROXY LINK...",
+    "transitionLogo": "BURNICE // ARCHIVE",
+    "profileButton": "Meet Author",
+    "journeyButton": "Journey",
+    "accessButton": "ACCESS DIRECTORY",
+    "menuHeading": "Pilih Direktori ZZZ",
+    "briefingTag": "SYSTEM BRIEFING // STATUS: ONLINE",
+    "briefingDescription": "Selamat datang di terminal arsip pusat Burnice White. Akses direktori operasional di bawah untuk meninjau portofolio desain grafis, tangkapan fotografi, hingga modul perangkat keras IoT secara langsung. Semua node telah tersinkronisasi dengan proxy database utama."
+  },
+  "social": [
+    {
+      "id": "facebook",
+      "platform": "Facebook",
+      "label": "Facebook",
+      "profileLabel": "Hollow Net // Facebook",
+      "url": "#",
+      "visible": true
+    },
+    {
+      "id": "instagram",
+      "platform": "Instagram",
+      "label": "Instagram",
+      "profileLabel": "Hollow Net // Instagram",
+      "url": "#",
+      "visible": true
+    },
+    {
+      "id": "twitter-x",
+      "platform": "Twitter / X",
+      "label": "Twitter / X",
+      "profileLabel": "Hollow Net // Twitter/X",
+      "url": "#",
+      "visible": true
+    }
+  ]
 }
