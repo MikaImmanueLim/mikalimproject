@@ -1,0 +1,230 @@
+{
+  "hero": {
+    "siteTitle": "BURNICE ARCHIVE // VISUAL ARCHITECT",
+    "archiveName": "BURNICE ARCHIVE",
+    "brandTitle": "VISUAL ARCHITECT",
+    "loadingSubtitle": "ESTABLISHING SECURE PROXY LINK...",
+    "badge": "Burnice White Terminal //",
+    "title": "Visual Architect",
+    "titleLines": [
+      "Visual",
+      "Architect"
+    ],
+    "typewriterText": "SECURE PROXY DATABASE // ALL NODES SYNCHRONIZED",
+    "ctaLabel": "ACCESS DIRECTORY",
+    "slides": [
+      "https://kimi-web-img.kimi.ai/img/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/0869b9ca0a0445b22d1899988b6609c1f0eef50f.png",
+      "https://kimi-web-img.kimi.ai/img/s1.zerochan.net/537aee25c6020e6bfaa29d0031dc1c1f95e875e1.jpg",
+      "https://kimi-web-img.kimi.ai/img/upload-os-bbs.hoyolab.com/1b343c56c50e8775e2c103dba3502cb5b9e362cd.png"
+    ]
+  },
+  "categories": [
+    {
+      "id": "design",
+      "slug": "design",
+      "number": "01",
+      "name": "Desain Grafis",
+      "label": "Desain Grafis",
+      "archiveTitle": "Arsip Desain Grafis",
+      "meta": "[01] KATEGORI UTAMA",
+      "description": "Eksplorasi identitas visual, UI/UX antarmuka faksi, vektor presisi tinggi, dan estetika distrik urban New Eridu.",
+      "image": "https://kimi-web-img.kimi.ai/img/cdn.displate.com/7b63361acf5fcfb9c8b9e9037f2f0fa5f99f66b3.jpg"
+    },
+    {
+      "id": "photo",
+      "slug": "photo",
+      "number": "02",
+      "name": "Fotografi",
+      "label": "Fotografi",
+      "archiveTitle": "Arsip Fotografi",
+      "meta": "[02] KATEGORI UTAMA",
+      "description": "Arsip tangkapan optik DSLR dan eksplorasi pencahayaan taktis di dalam area investigasi Hollow.",
+      "image": "https://kimi-web-img.kimi.ai/img/embed.pixiv.net/a7a4f38de627112d59e5660412010ff339cd5428.jpg"
+    },
+    {
+      "id": "iot",
+      "slug": "iot",
+      "number": "03",
+      "name": "IoT Projects",
+      "label": "IoT Projects",
+      "archiveTitle": "IoT Random Project",
+      "meta": "[03] KATEGORI UTAMA",
+      "description": "Modul integrasi perangkat keras, otomatisasi mikrokontroler, dan perakitan sistem cerdas lapangan.",
+      "image": "https://kimi-web-img.kimi.ai/img/storage.waifuwall.com/2d961c8cd91b231ed58ca793f736143b78207fa7.webp"
+    }
+  ],
+  "projects": [
+    {
+      "id": "burnice-ui-system",
+      "category": "design",
+      "title": "Burnice UI System",
+      "meta": "Desain Grafis",
+      "desc": "Eksplorasi antarmuka terminal bergaya faksi Sons of Calydon dengan pendekatan brutalism cyberpunk. Menggunakan palet warna neon cyan dan amber untuk kontras tinggi yang mencerminkan energi Burnice White.",
+      "description": "Eksplorasi antarmuka terminal bergaya faksi Sons of Calydon dengan pendekatan brutalism cyberpunk. Menggunakan palet warna neon cyan dan amber untuk kontras tinggi yang mencerminkan energi Burnice White.",
+      "image": "https://kimi-web-img.kimi.ai/img/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/0869b9ca0a0445b22d1899988b6609c1f0eef50f.png"
+    },
+    {
+      "id": "flamethrower-hud",
+      "category": "design",
+      "title": "Flamethrower HUD",
+      "meta": "Desain Grafis",
+      "desc": "Antarmuka heads-up display untuk monitoring sistem flamethrower taktis. Informasi real-time dengan minimalkis estetika dan warna heat signature.",
+      "description": "Antarmuka heads-up display untuk monitoring sistem flamethrower taktis. Informasi real-time dengan minimalkis estetika dan warna heat signature.",
+      "image": "https://kimi-web-img.kimi.ai/img/cdn.displate.com/7b63361acf5fcfb9c8b9e9037f2f0fa5f99f66b3.jpg"
+    },
+    {
+      "id": "hollow-net-branding",
+      "category": "design",
+      "title": "Hollow Net Branding",
+      "meta": "Desain Grafis",
+      "desc": "Redesign identitas visual jaringan proxy underground. Logo, stationery, dan guidelines untuk komunikasi visual antar faksi dengan tema Burnice.",
+      "description": "Redesign identitas visual jaringan proxy underground. Logo, stationery, dan guidelines untuk komunikasi visual antar faksi dengan tema Burnice.",
+      "image": "https://kimi-web-img.kimi.ai/img/embed.pixiv.net/a7a4f38de627112d59e5660412010ff339cd5428.jpg"
+    },
+    {
+      "id": "burnice-portrait-shot",
+      "category": "photo",
+      "title": "Burnice Portrait Shot",
+      "meta": "Fotografi",
+      "desc": "Tangkapan kamera portrait dengan pencahayaan taktis di dalam area investigasi Hollow. Menggunakan teknik chiaroscuro untuk efek dramatis.",
+      "description": "Tangkapan kamera portrait dengan pencahayaan taktis di dalam area investigasi Hollow. Menggunakan teknik chiaroscuro untuk efek dramatis.",
+      "image": "https://kimi-web-img.kimi.ai/img/upload-os-bbs.hoyolab.com/1b343c56c50e8775e2c103dba3502cb5b9e362cd.png"
+    },
+    {
+      "id": "neon-distrik-series",
+      "category": "photo",
+      "title": "Neon Distrik Series",
+      "meta": "Fotografi",
+      "desc": "Dokumentasi visual distrik urban New Eridu pada malam hari. Eksplorasi warna neon dan bayangan panjang dengan Burnice sebagai subjek utama.",
+      "description": "Dokumentasi visual distrik urban New Eridu pada malam hari. Eksplorasi warna neon dan bayangan panjang dengan Burnice sebagai subjek utama.",
+      "image": "https://kimi-web-img.kimi.ai/img/s1.zerochan.net/537aee25c6020e6bfaa29d0031dc1c1f95e875e1.jpg"
+    },
+    {
+      "id": "combat-gear-detail",
+      "category": "photo",
+      "title": "Combat Gear Detail",
+      "meta": "Fotografi",
+      "desc": "Makro fotografi peralatan operasional Burnice. Tekstur logam, kabel, dan komponen elektronik dengan detail tinggi.",
+      "description": "Makro fotografi peralatan operasional Burnice. Tekstur logam, kabel, dan komponen elektronik dengan detail tinggi.",
+      "image": "https://kimi-web-img.kimi.ai/img/storage.waifuwall.com/2d961c8cd91b231ed58ca793f736143b78207fa7.webp"
+    },
+    {
+      "id": "flame-sensor-module",
+      "category": "iot",
+      "title": "Flame Sensor Module",
+      "meta": "IoT Projects",
+      "desc": "Prototype sensor deteksi suhu berbasis ESP32 dengan integrasi WiFi untuk transmisi data real-time ke terminal pusat.",
+      "description": "Prototype sensor deteksi suhu berbasis ESP32 dengan integrasi WiFi untuk transmisi data real-time ke terminal pusat.",
+      "image": "https://kimi-web-img.kimi.ai/img/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/93497a7381b7b7bceef76cb1996840cb067825a9.png"
+    },
+    {
+      "id": "auto-defense-turret",
+      "category": "iot",
+      "title": "Auto-Defense Turret",
+      "meta": "IoT Projects",
+      "desc": "Sistem kontrol otomatis dengan servo motor dan kamera IP untuk monitoring area sensitif di dalam Hollow.",
+      "description": "Sistem kontrol otomatis dengan servo motor dan kamera IP untuk monitoring area sensitif di dalam Hollow.",
+      "image": "https://kimi-web-img.kimi.ai/img/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/0869b9ca0a0445b22d1899988b6609c1f0eef50f.png"
+    },
+    {
+      "id": "energy-monitor-grid",
+      "category": "iot",
+      "title": "Energy Monitor Grid",
+      "meta": "IoT Projects",
+      "desc": "Dashboard monitoring konsumsi energi flamethrower dengan visualisasi data menggunakan chart real-time dan alert system.",
+      "description": "Dashboard monitoring konsumsi energi flamethrower dengan visualisasi data menggunakan chart real-time dan alert system.",
+      "image": "https://kimi-web-img.kimi.ai/img/s1.zerochan.net/537aee25c6020e6bfaa29d0031dc1c1f95e875e1.jpg"
+    }
+  ],
+  "profile": {
+    "sectionTitle": "Intelijen Data // Profil",
+    "image": "https://kimi-web-img.kimi.ai/img/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/93497a7381b7b7bceef76cb1996840cb067825a9.png",
+    "name": "Proxy / Visual Architect",
+    "role": "Operative Class // Hollow Investigator",
+    "bio": "Beroperasi di dalam Hollows New Eridu. Menggabungkan estetika antarmuka game taktis, desain grafis bernuansa distrik urban, dan kalibrasi sistem optik untuk hasil visual beresolusi tinggi ala Zenless Zone Zero."
+  },
+  "journey": {
+    "sectionTitle": "Follow My Journey",
+    "network": {
+      "title": "Live Network: Inter-Knot",
+      "description": "Pantau transmisi harian misi Hollow dan aktivitas taktis.",
+      "ctaLabel": "KONEKSIKAN UI ↗",
+      "url": "#"
+    },
+    "entries": [
+      {
+        "id": "log-042",
+        "label": "LOG #042 // 2026.08.30",
+        "date": "2026.08.30",
+        "title": "Investigasi Distrik 12",
+        "description": "Eksplorasi visual di distrik terdalam Hollow dengan setup kamera taktis modifikasi."
+      },
+      {
+        "id": "log-041",
+        "label": "LOG #041 // 2026.08.15",
+        "date": "2026.08.15",
+        "title": "UI Faksi Belobog",
+        "description": "Redesign antarmuka terminal dengan pendekatan brutalism cyberpunk."
+      },
+      {
+        "id": "log-040",
+        "label": "LOG #040 // 2026.07.28",
+        "date": "2026.07.28",
+        "title": "Modul Sensor Hollow",
+        "description": "Perakitan prototype sensor deteksi anomali berbasis Arduino dan ESP32."
+      }
+    ]
+  },
+  "socialLinks": [
+    {
+      "id": "facebook",
+      "platform": "Facebook",
+      "label": "Facebook",
+      "profileLabel": "Hollow Net // Facebook",
+      "url": "#"
+    },
+    {
+      "id": "instagram",
+      "platform": "Instagram",
+      "label": "Instagram",
+      "profileLabel": "Hollow Net // Instagram",
+      "url": "#"
+    },
+    {
+      "id": "twitter-x",
+      "platform": "Twitter / X",
+      "label": "Twitter / X",
+      "profileLabel": "Hollow Net // Twitter/X",
+      "url": "#"
+    }
+  ],
+  "settings": {
+    "language": "id",
+    "theme": "burnice-cyberpunk",
+    "contentPath": "data/site.json",
+    "legacyProjectsPath": "data/projects.js",
+    "portfolioUrl": "https://mikailmanuelim.github.io/mikalimproject/",
+    "topbar": {
+      "archiveName": "BURNICE ARCHIVE //",
+      "brandTitle": "VISUAL ARCHITECT",
+      "profileButtonLabel": "Meet Author",
+      "journeyButtonLabel": "Journey"
+    },
+    "lobby": {
+      "briefingTag": "SYSTEM BRIEFING // STATUS: ONLINE",
+      "briefingDescription": "Selamat datang di terminal arsip pusat Burnice White. Akses direktori operasional di bawah untuk meninjau portofolio desain grafis, tangkapan fotografi, hingga modul perangkat keras IoT secara langsung. Semua node telah tersinkronisasi dengan proxy database utama.",
+      "directoryHeading": "Pilih Direktori ZZZ",
+      "backButtonLabel": "Akses Lobby Utama",
+      "galleryHeading": "Arsip Direktori"
+    },
+    "loadingStatuses": [
+      "INITIALIZING...",
+      "CONNECTING TO PROXY...",
+      "SYNCING DATABASE...",
+      "VERIFYING INTEGRITY...",
+      "ACCESS GRANTED"
+    ],
+    "pageTransitionLabel": "BURNICE // ARCHIVE",
+    "heroSlideIntervalMs": 6000
+  }
+}
